@@ -70,7 +70,7 @@ def searchPageExtractor(searchTerm):
                 # thread = Thread(target=threadDataExtractor, args=[productLink])
                 # thread.start()
                 # threads.append(thread)
-                multi= multiprocessing.Process(target=threadDataExtractor,args=[productLink])
+                multi= multiprocessing.Process(target=multiprocessDataExtractor,args=[productLink])
                 multi.start()
                
                 multiProcess.append(multi)
